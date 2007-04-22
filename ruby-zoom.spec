@@ -1,22 +1,19 @@
 %define rbname zoom
 %define version 0.2.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Ruby binding to the Z39.50 Object-Orientation Model
 Name: ruby-%{rbname}
 
 Version: %{version}
 Release: %{release}
-Group: Development/Other
+Group: Development/Ruby
 License: LGPL
 URL: http://ruby-zoom.rubyforge.org/
 Source0: %{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: ruby-devel 
 BuildRequires: yaz-devel tcp_wrappers-devel
-
-%define ruby_libdir %(ruby -rrbconfig -e 'puts Config::CONFIG["sitelibdir"]')
-%define ruby_archdir %(ruby -rrbconfig -e 'puts Config::CONFIG["sitearchdir"]')
 
 %description
 Ruby/ZOOM provides a Ruby binding to the Z39.50 Object-Orientation Model
@@ -45,6 +42,6 @@ make install DESTDIR=%{buildroot}
 %files
 %defattr(-, root, root)
 %doc ChangeLog README doc sample
-%{ruby_archdir}/%{rbname}.so
-%{ruby_libdir}/marc.rb
+%{ruby_sitearchdir}/%{rbname}.so
+%{ruby_sitelibdir}/marc.rb
 
