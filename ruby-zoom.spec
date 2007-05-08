@@ -1,6 +1,6 @@
 %define rbname zoom
 %define version 0.2.2
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: Ruby binding to the Z39.50 Object-Orientation Model
 Name: ruby-%{rbname}
