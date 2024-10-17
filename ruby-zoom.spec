@@ -9,7 +9,7 @@ Version: %{version}
 Release: %{release}
 Group: Development/Ruby
 License: LGPL
-URL: http://ruby-zoom.rubyforge.org/
+URL: https://ruby-zoom.rubyforge.org/
 Source0: %{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: ruby-devel 
