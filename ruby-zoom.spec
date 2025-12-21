@@ -12,6 +12,7 @@ License: LGPL
 URL: https://ruby-zoom.rubyforge.org/
 Source0: %{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
+BuildRequires:	make
 BuildRequires: ruby-devel 
 BuildRequires: yaz-devel tcp_wrappers-devel
 
